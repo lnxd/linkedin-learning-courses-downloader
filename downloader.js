@@ -36,7 +36,6 @@ const LinkedInLearningDownloader = () => {
             const height = 900
             browser = await puppeteer.launch({
                 headless: true,
-                args: [`--window-size=${width},${height}`]
                 args: [`--window-size=${width},${height}`, 
                        '--no-sandbox',
                        '--disable-setuid-sandbox']
